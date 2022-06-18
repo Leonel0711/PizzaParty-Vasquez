@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body{
+    background:url("../");
+}
+/*colores*/
+.color_white{
+    color: rgb(255, 255, 255);
+}
+/*fondos*/
+
+/*nav*/
+#nav{
+    z-index: 3;
+    box-shadow: 1px 1px 5px black;
+}
+.logo{
+    width: 10rem;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+/*main Index*/
+.novedades{
+    width: 90%;
+}
+.container_deli{
+    background-color: rgb(224, 84, 42);
+    border-radius: 2rem;
+}
+/*Sucursal*/
+.bg-grey{
+    background-color: rgb(179, 179, 179);
+}
+.maps{
+    height: 400px;
+    width: 100%;
+}
+/*Footer*/
+.footer {
+    padding: 1rem 0;
+    background-color: #161616;
+    height: auto;
+}
+
+.footer_titulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footer_text {
+    text-align: center;
+    color: white;
+}
+
+.redes {
+    width: 60%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_redes {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(102, 102, 102);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 1s, color 1s, box-shadow 0.5s;
+}
+
+#insta:hover {
+    background-color: #E1306C;
+    color: white;
+    box-shadow: 0px 0px 20px #E1306C;
+}
+
+#face:hover {
+    background-color: #2654af;
+    color: white;
+    box-shadow: 0px 0px 20px #2654af;
+}
+
+#whatsapp:hover {
+    background-color: #049125;
+    color: white;
+    box-shadow: 0px 0px 20px #049125;
+}
+
+.footer_img {
+    width: 2rem;
+    display: inline-block;
+}
+
+@media screen and (min-width:576px){
+    /*footer*/
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
