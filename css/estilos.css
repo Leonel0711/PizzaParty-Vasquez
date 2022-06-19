@@ -6,41 +6,52 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-body{
-    background:url("../");
+body {
+    background: url("../img/fondo/fondo4.jpg");
 }
+
 /*colores*/
-.color_white{
+.color_white {
     color: rgb(255, 255, 255);
 }
+
 /*fondos*/
 
 /*nav*/
-#nav{
+#nav {
     z-index: 3;
     box-shadow: 1px 1px 5px black;
 }
-.logo{
+
+.logo {
     width: 10rem;
     height: auto;
     justify-content: space-evenly;
 }
 
 /*main Index*/
-.novedades{
+.novedades {
     width: 90%;
 }
-.container_deli{
+
+.container_deli {
     background-color: rgb(224, 84, 42);
     border-radius: 2rem;
 }
+
 /*Sucursal*/
-.bg-grey{
+.bg-grey {
     background-color: rgb(179, 179, 179);
 }
-.maps{
+
+.maps {
     height: 400px;
     width: 100%;
+}
+
+/*Menu*/
+.row_gap{
+    row-gap: 1rem;
 }
 /*Footer*/
 .footer {
@@ -74,7 +85,7 @@ body{
     align-items: center;
     gap: 1rem;
     color: rgb(102, 102, 102);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     transition: background-color 1s, color 1s, box-shadow 0.5s;
 }
@@ -102,7 +113,8 @@ body{
     display: inline-block;
 }
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
+
     /*footer*/
     .redes {
         flex-direction: row;
