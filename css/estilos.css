@@ -38,7 +38,19 @@ body {
     background-color: rgb(224, 84, 42);
     border-radius: 2rem;
 }
-
+.maxw_imgD{
+    max-width: 30rem;
+}
+.maxw_imgD div{
+    display: flex;
+    justify-content: center;
+}
+.border{
+    border: 2px solid white;
+}
+.border:hover{
+    border: 2px solid red;
+}
 /*Sucursal*/
 .bg-grey {
     background-color: rgb(179, 179, 179);
