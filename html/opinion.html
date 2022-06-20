@@ -50,6 +50,18 @@
                                 <li><a class="dropdown-item" href="menu.html#descuento">Descuentos</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle color_white" href="#" id="offcanvasNavbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Delivery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                              <li><a class="dropdown-item" href="delivery.html">Pizza</a></li>
+                              <li><a class="dropdown-item" href="delivery.html">Empanadas</a></li>
+                              <li><a class="dropdown-item" href="delivery.html">Minutas</a></li>
+                              <li><a class="dropdown-item" href="delivery.html">Bebida</a></li>
+                            </ul>
+                          </li>
                         <li class="nav-item ">
                             <a class="nav-link active color_white" href="opinion.html">Opinion</a>
                         </li>
@@ -60,7 +72,7 @@
     </nav>
     <!--End Nav-->
     <main>
-        <h1 class="text-center my-3">Opinion</h1>
+        <h1 class="text-center my-3 color_title">Opinion</h1>
         <form action="" class="container my-3 bg_red p-4 fs-3 color_white">
             <div>
                 <h2 class="text-center my-3">Datos del cliente</h2>
@@ -89,40 +101,46 @@
             <div>
                 <h2 class="text-center my-4">Opinion del cliente</h2>
                 <div class="mb-3">
-                    <label for="cliente" class="form-label">Cliente</label>
-                    <select id="cliente" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Tipo de cliente</option>
-                        <option value="delivery">Delivery</option>
-                        <option value="salon">Salon</option>
-                        <option value="mostrador">Mostrador</option>
+                    <label for="servicio" class="form-label">Atencion de nuestro personal</label>
+                    <select id="servicio" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Calificacion</option>
+                        <option value="excelent">Excelente</option>
+                        <option value="nice">Muy Buena</option>
+                        <option value="fire">Regular</option>
+                        <option value="bad">Mala</option>
+                        <option value="horrible">Muy Mala</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="cliente" class="form-label">Cliente</label>
-                    <select id="cliente" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Tipo de cliente</option>
-                        <option value="delivery">Delivery</option>
-                        <option value="salon">Salon</option>
-                        <option value="mostrador">Mostrador</option>
+                    <label for="calidad" class="form-label">Calidad de Nuestro Producto</label>
+                    <select id="calidad" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Calificacion</option>
+                        <option value="excelent">Excelente</option>
+                        <option value="nice">Muy Buena</option>
+                        <option value="fire">Regular</option>
+                        <option value="bad">Mala</option>
+                        <option value="horrible">Muy Mala</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="cliente" class="form-label">Cliente</label>
-                    <select id="cliente" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Tipo de cliente</option>
-                        <option value="delivery">Delivery</option>
-                        <option value="salon">Salon</option>
-                        <option value="mostrador">Mostrador</option>
+                    <label for="limpieza" class="form-label">Limpieza e higiene del local visitado</label>
+                    <select id="limpieza" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Calificacion</option>
+                        <option value="excelent">Excelente</option>
+                        <option value="nice">Muy Buena</option>
+                        <option value="fire">Regular</option>
+                        <option value="bad">Mala</option>
+                        <option value="horrible">Muy Mala</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Opinion</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn" type="submit">Enviar</button>
-                <button class="btn " type="reset">borrar</button>
+                <button class="btn_opinion" type="submit">Enviar</button>
+                <button class="btn_opinion " type="reset">borrar</button>
             </div>
         </form>
 
