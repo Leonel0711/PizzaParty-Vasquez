@@ -10,16 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Menu</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <nav class="navbar bg-light sticky-top nav_shadow">
+    <nav class="navbar bg-light sticky-top nav_shadow ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../img/Utiles/newLogoRed.png" class="logo" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon fs-2 center_icon">☰</span>
+                <span class="navbar-toggler-icon fs-1 center_icon">☰</span>
             </button>
             <div class="offcanvas offcanvas-end nav " tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -42,7 +42,7 @@
                                 Menu
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
+                                <li><a class="dropdown-item" href="menu.html#pizza">Pizza</a></li>
                                 <li><a class="dropdown-item" href="#">Empanadas</a></li>
                                 <li><a class="dropdown-item" href="#">Minutas</a></li>
                                 <li><a class="dropdown-item" href="#">Postres</a></li>
@@ -52,7 +52,7 @@
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link active color_white" href="opinion.html">Opinion</a>
-                          </li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -60,69 +60,55 @@
     </nav>
     <!--End Nav-->
     <main>
-        <h1 class="text-center my-3">Menu</h1>
-        <Section class="container-xxl bg-light p-4 my-2 " id="pizza">
-            <h2 class="text-center">Pizzas</h2>
-            <div class="row w-100 mx-auto row_gap text-center">
-                <div class="col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_muzzarela.jpg" class="card-img-top" alt="Pizza de muzzarella">
-                        <div class="card-body ">
-                            <h5>Pizza de muzzarella</h5>
-                            <p class="card-text ">Clasica pizza de muzzarella y salsa</p>
-                            <a href="#" class="btn_menu">ir a comprar</a>
-                        </div>
-                    </div>
+        <h1 class="text-center my-3">Opinion</h1>
+        <form action="" class="container my-3 bg_red p-4 fs-3 color_white">
+            <div>
+                <h2 class="text-center my-3">Datos del cliente</h2>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="email" class="form-control" id="apellido"
+                        placeholder="surname/apellido">
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_jamon.jpg" class="card-img-top" alt="Pizza de Jamon y Queso">
-                        <div class="card-body">
-                            <h5>Pizza de Jamon y muzza</h5>
-                            <p class="card-text ">Clasica pizza de muzzarella y salsa</p>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="nombre"
+                        placeholder="name/nombre">
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_napo.jpg" class="card-img-top" alt="Pizza de napolitana">
-                        <div class="card-body">
-                            <p class="card-text">Pizza de napolitana</p>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Direccion de correo electronico</label>
+                    <input type="email" class="form-control" id="email"
+                        placeholder="name@example.com">
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_fugazzeta.jpg" class="card-img-top" alt="Pizza de fugazzeta">
-                        <div class="card-body">
-                            <p class="card-text">Pizza de fugazzeta</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_peperoni.png" class="card-img-top" alt="Pizza de peperoni">
-                        <div class="card-body">
-                            <p class="card-text">Pizza de peperoni</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <img src="../img/Pizzas/pizza_especialidad_casa.jpg" class="card-img-top"
-                            alt="Pizza de peperoni">
-                        <div class="card-body">
-                            <h5>Pizza de especial de la casa</h5>
-                            <p class="card-text ">Clasica pizza de muzzarella y salsa</p>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="cliente" class="form-label">Cliente</label>
+                    <select id="cliente" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>Tipo de cliente</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="salon">Salon</option>
+                        <option value="mostrador">Mostrador</option>
+                    </select>
                 </div>
             </div>
+            <div>
+                <h2 class="text-center my-4">Opinion del cliente</h2>
+                <div class="mb-3">
+                    
+                </div>
+                <div class="mb-3">
+                </div>
+                <div class="mb-3">
 
-        </Section>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </form>
+
+        
     </main>
     <!--End Main-->
-
     <footer class="footer container-fluid " id="redes">
         <p class="footer_titulo fs-2 ">Redes Sociales</p>
         <div class="redes fs-4 gap-3">
@@ -136,12 +122,10 @@
         <p class="footer_text fs-5 my-2">© 2022 Vasquez — All rights reserved.</p>
     </footer>
     <!--End Footer-->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
+    <!--End Script-->
 </body>
 
 </html>

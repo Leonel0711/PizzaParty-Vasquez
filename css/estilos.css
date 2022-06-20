@@ -18,15 +18,35 @@ body {
 /*fondos*/
 
 /*nav*/
-#nav {
-    z-index: 3;
-    box-shadow: 1px 1px 5px black;
+.nav_shadow{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+.nav {
+    background: #292929;
 }
 
 .logo {
     width: 10rem;
     height: auto;
     justify-content: space-evenly;
+}
+.center_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes color {
+    from {
+        color: rgb(92, 92, 92);
+    }
+
+    to {
+        color: rgb(255, 0, 0);
+    }
+}
+.nav_title {
+    animation: color 4s infinite alternate linear;
+    font-size: 2.5rem;
 }
 
 /*main Index*/
@@ -64,6 +84,23 @@ body {
 /*Menu*/
 .row_gap{
     row-gap: 1rem;
+}
+.btn_menu{
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 2, 2);
+    text-decoration: none;
+}
+.btn_menu:hover{
+    color: #292929;
+}
+
+
+/*Opinion*/
+.bg_red{
+    background-color: rgb(151, 0, 0);
+    border-radius: 10px;
 }
 /*Footer*/
 .footer {
