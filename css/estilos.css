@@ -44,8 +44,21 @@ body {
         color: rgb(255, 0, 0);
     }
 }
+.offcanvas-body{
+    padding-left:0 ;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:focus{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(94, 94, 94);
+    border-left:3px solid white ;
+}
 .nav_title {
-    animation: color 4s infinite alternate linear;
+    animation: color 2s infinite alternate linear;
     font-size: 2.5rem;
 }
 
@@ -101,6 +114,12 @@ body {
 .bg_red{
     background-color: rgb(151, 0, 0);
     border-radius: 10px;
+}
+.btn{
+    background-color: white;
+}
+.btn:focus{
+    box-shadow: none;
 }
 /*Footer*/
 .footer {
