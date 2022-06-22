@@ -17,6 +17,7 @@
     <nav class="navbar bg-light sticky-top nav_shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../img/Utiles/newLogoRed.png" class="logo" alt="logo"></a>
+            <h5 class="nav_titleDesktop ">Pizza Party</h5>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon fs-2 center_icon">☰</span>
@@ -37,26 +38,27 @@
                             <a class="nav-link active color_white" href="sucursal.html"> Sucursales</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle color_white" href="#" 
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle color_white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Menu
                             </a>
-                            <ul class="dropdown-menu" >
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
                                 <li><a class="dropdown-item" href="#empanada">Empanadas</a></li>
-                                <li><a class="dropdown-item" href="#minuto">Minutas</a></li>
+                                <li><a class="dropdown-item" href="#minuta">Minutas</a></li>
                                 <li><a class="dropdown-item" href="#postre">Postres</a></li>
                                 <li><a class="dropdown-item" href="#bebida">Bebidas</a></li>
                                 <li><a class="dropdown-item" href="#descuento">Descuentos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle color_white" href="#" 
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle color_white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Delivery
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="delivery.html">Pizza</a></li>
+                                <li><a class="dropdown-item" href="delivery.html#promos">Promociones</a></li>
+                                <li><a class="dropdown-item" href="delivery.html#pizza">Pizza</a></li>
                                 <li><a class="dropdown-item" href="delivery.html">Empanadas</a></li>
                                 <li><a class="dropdown-item" href="delivery.html">Minutas</a></li>
                                 <li><a class="dropdown-item" href="delivery.html">Bebida</a></li>
@@ -75,7 +77,7 @@
         <h1 class="text-center my-3 color_title">Menu</h1>
         <Section class="set_menu container-xxl bg-light p-4 my-2 " id="pizza">
             <h2 class="text-center">Pizzas</h2>
-            <div class="row w-100 mx-auto row_gap text-center">
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Pizzas/pizza_muzzarela.jpg" class="card-img-top" alt="Pizza de muzzarella">
@@ -134,9 +136,10 @@
             </div>
         </Section>
         <!--End Section-->
+
         <Section class="set_menu container-xxl bg-light p-4 my-2 " id="empanada">
             <h2 class="text-center">Empanadas</h2>
-            <div class="row w-100 mx-auto row_gap text-center">
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Empanadas/empanadas_carne.jpg" alt="Empanadas de carne" class="card-img-top">
@@ -191,9 +194,10 @@
                 </div><!-- End Card -->
             </div>
         </section><!-- End Section -->
+
         <Section class="set_menu container-xxl bg-light p-4 my-2 " id="minuta">
             <h2 class="text-center">Minutas</h2>
-            <div class="row w-100 mx-auto row_gap text-center">
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Minutas/milanesa_fritas.jpg" alt="milanesa napolitana con fritas"
@@ -203,7 +207,7 @@
                             <p class="card-text ">milanesa con jamon y muzza con guarnicion de papas fritas</p>
                         </div>
                     </div>
-                </div>
+                </div><!-- End Card -->
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Minutas/milanes_pure.jpg" alt="milanesa con pure " class="card-img-top">
@@ -212,7 +216,7 @@
                             <p class="card-text ">milanesa al horno con guarnicion de pure</p>
                         </div>
                     </div>
-                </div>
+                </div><!-- End Card -->
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Minutas/milanesa_ensalada.png" alt="milanesa con ensalada"
@@ -222,7 +226,7 @@
                             <p class="card-text ">milanesa al horno guarnicion de tomate y lechuga</p>
                         </div>
                     </div>
-                </div>
+                </div><!-- End Card -->
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Minutas/sandwich_milanesaC.jpg" alt="Sandwich de milanesa completo"
@@ -233,7 +237,7 @@
                                 de fritas</p>
                         </div>
                     </div>
-                </div>
+                </div><!-- End Card -->
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card">
                         <img src="../img/Minutas/hamburguesa_fritas.jpg" alt="hamburguesa completa"
@@ -244,9 +248,144 @@
                                 con guarnicion de fritas</p>
                         </div>
                     </div>
-                </div>
+                </div><!-- End Card -->
             </div>
-        </section>
+        </section><!-- End Section -->
+
+        <section class="set_menu container-xxl bg-light p-4 my-2 " id="postre">
+            <h2 class="text-center">Postres</h2>
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Postres/postre.jpg" alt="Postre de frambuesa">
+                        <div class="card-body">
+                            <h5>Postre de frambuesa</h5>
+                            <p class="card-text ">Pastel de frambuesa helado con crema de tres leches</p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Postres/helado_chocolate.jpg" alt="Helado de chocolat">
+                        <div class="card-body">
+                            <h5>Helado de chocolate</h5>
+                            <p class="card-text ">Helado de chocolate con crema y chocolate liquido</p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Postres/banana_split.jpg" alt="banana split">
+                        <div class="card-body">
+                            <h5>banana split</h5>
+                            <p class="card-text ">banana , cereza y helado de vainilla, chocolate, frutilla ,con crema y chocolate liquido</p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+            </div><!-- End row -->
+        </section><!-- End Section -->
+
+        <section class="set_menu container-xxl bg-light p-4 my-2 " id="bebida">
+            <h2 class="text-center">Bebidas</h2>
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/CocaCola.webp" alt="CocaCola 1.5L">
+                        <div class="card-body">
+                            <h5>CocaCola 1.5L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/Pepsi.jpg" alt="Pepsi 1.5L">
+                        <div class="card-body">
+                            <h5>Pepsi 1.5L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/SaltaRubia.png" alt="Cerveza Salta Rubia 1.2L">
+                        <div class="card-body">
+                            <h5>Cerveza Salta Rubia 1.2L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/SaltaNegra.png" alt="Cerveza Salta Negra 1L">
+                        <div class="card-body">
+                            <h5>Cerveza Salta Negra 1L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/CervezaQuilmes.jpg" alt="Cerveza Quilmes 1L">
+                        <div class="card-body">
+                            <h5>Cerveza Quilmes Negra 1L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/QuilmesLata.webp" alt="Cerveza Quilmes lata 500ml">
+                        <div class="card-body">
+                            <h5>Cerveza Quilmes lata 500ml</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/Brahama.webp" alt="Cerveza brahama 1L">
+                        <div class="card-body">
+                            <h5>Cerveza brahama 1L</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Bebidas/BrahmaLata.png" alt="Cerveza brahama lata 500ml">
+                        <div class="card-body">
+                            <h5>Cerveza brahama lata 500ml</h5>
+                            <p class="card-text "></p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+            </div><!-- End row -->
+        </section><!-- End Section -->
+
+        <section class="set_menu container-xxl bg-light p-4 my-2 " id="descuento">
+            <h2 class="text-center">Descuentos</h2>
+            <div class="row w-100 mx-auto row_gap text-center cards_menu">
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Promociones/cupon.png" alt="">
+                        <div class="card-body">
+                            <h5>Oferta del blackFriday</h5>
+                            <p class="card-text ">Oferta unica por el dia</p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="card">
+                        <img src="../img/Promociones/descuento_pedido.png" alt="">
+                        <div class="card-body">
+                            <h5>Descuento del 30%</h5>
+                            <p class="card-text ">Solo aplicable en la sucursal av.xxxxxx por el dia de la pizza</p>
+                        </div>
+                    </div>
+                </div><!-- End card -->
+            </div><!-- End row -->
+        </section><!-- End Section -->
     </main>
     <!--End Main-->
 
