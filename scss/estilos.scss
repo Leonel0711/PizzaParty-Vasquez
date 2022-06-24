@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$RojoPrincipal: rgb(165, 0, 0);
+$Blanco: rgb(255, 255, 255);
+
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background: url("../img/fondo/fondo4.jpg");
+}
+
+.color_white {
+    color: $Blanco ;
+}
+
+.color_title {
+    color: $RojoPrincipal;
+    text-decoration: underline;
+}
+
+nav div.offcanvas {
+    width: 200px;
+}
+
+.nav_shadow {
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.nav {
+    background: #292929;
+
+    &-link {
+        color: $Blanco;
+
+        &:focus {
+            color: $Blanco;
+        }
+
+        &:hover {
+            color: rgb(94, 94, 94);
+            border-left: 3px solid $Blanco;
+        }
+    }
+
+    &_titleDesktop {
+        display: none;
+        font-style: italic;
+        text-decoration: underline;
+        animation: color 2s infinite alternate linear;
+        font-size: 4rem;
+    }
+
+    &_title {
+        text-decoration: underline;
+        font-style: italic;
+        animation: color 2s infinite alternate linear;
+        font-size: 2.5rem;
+    }
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.center_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+keyframes color {
+    color: rgb(92, 92, 92);
+}
+
+to {
+    color: rgb(255, 0, 0);
+}
+
+.offcanvas-body {
+    padding-left: 0;
+}
+
+.dropdown-item:focus {
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+}
+
+.novedades {
+    width: 90%;
+}
+
+.container_deli {
+    background-color: rgb(224, 84, 42);
+    border-radius: 2rem;
+}
+
+.maxw_imgD {
+    max-width: 30rem;
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.border {
+    border: 2px solid $Blanco;
+
+    &:hover {
+        border: 2px solid red;
+    }
+}
+
+.bg-grey {
+    background-color: rgb(179, 179, 179);
+}
+
+.maps {
+    height: 400px;
+    width: 100%;
+}
+
+.row_gap {
+    row-gap: 1rem;
+}
+
+.cards_menu div div.card {
+    height: 25rem;
+
+    img {
+        height: 70%;
+    }
+
+    div {
+        height: 30%;
+    }
+}
+
+.btn_menu:hover {
+    color: #292929;
+}
+
+.set_menu {
+    scroll-margin-top: 8rem;
+}
+
+.cards_deli div div.card {
+    height: 15rem;
+}
+
+.container_text {
+    height: 60%;
+}
+
+.btn_delivery {
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: $RojoPrincipal;
+
+    &:focus {
+        color: $Blanco;
+    }
+}
+
+.precio {
+    font-size: 2rem;
+}
+
+.bg_red {
+    background-color: $RojoPrincipal;
+    border-radius: 5px;
+}
+
+.btn_opinion {
+    background-color: $Blanco;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.footer {
+    padding: 1rem 0;
+    background-color: #161616;
+    height: auto;
+
+    &_titulo {
+        text-align: center;
+        color: $Blanco;
+    }
+
+    &_text {
+        text-align: center;
+        color: $Blanco;
+    }
+
+    &_redes {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: rgb(102, 102, 102);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        transition: background-color 1s, color 1s, box-shadow 0.5s;
+    }
+
+    &_img {
+        width: 2rem;
+        display: inline-block;
+    }
+}
+
+.redes {
+    width: 60%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insta:hover {
+    background-color: #E1306C;
+    color: $Blanco;
+    box-shadow: 0px 0px 20px #E1306C;
+}
+
+#face:hover {
+    background-color: #2654af;
+    color: $Blanco;
+    box-shadow: 0px 0px 20px #2654af;
+}
+
+#whatsapp:hover {
+    background-color: #049125;
+    color: $Blanco;
+    box-shadow: 0px 0px 20px #049125;
+}
+
+@media screen and (min-width:576px) {
+    .logo {
+        width: 8rem;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .nav_titleDesktop {
+        display: inline-block;
+    }
+
+    .nav_title {
+        visibility: hidden;
+    }
+
+    nav div.offcanvas {
+        width: 350px;
+    }
+
+    .set_menu {
+        scroll-margin-top: 11rem;
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
