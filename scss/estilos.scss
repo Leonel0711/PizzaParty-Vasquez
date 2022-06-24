@@ -73,14 +73,15 @@ nav div.offcanvas {
     align-items: center;
 }
 
-keyframes color {
-    color: rgb(92, 92, 92);
-}
-
-to {
-    color: rgb(255, 0, 0);
-}
-
+@keyframes color {
+    from {
+      color: rgb(92, 92, 92);
+    }
+  
+    to {
+      color: rgb(255, 0, 0);
+    }
+  }
 .offcanvas-body {
     padding-left: 0;
 }

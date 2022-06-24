@@ -51,11 +51,11 @@ nav div.offcanvas {
   justify-content: center;
   align-items: center; }
 
-keyframes color {
-  color: #5c5c5c; }
-
-to {
-  color: red; }
+@keyframes color {
+  from {
+    color: #5c5c5c; }
+  to {
+    color: red; } }
 
 .offcanvas-body {
   padding-left: 0; }
