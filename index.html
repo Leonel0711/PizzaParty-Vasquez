@@ -9,8 +9,16 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Link css -->
   <link rel="stylesheet" href="css/estilos.css">
-  <title>Home</title>
+  <!-- shortcut icon -->
+  <link rel="shortcut icon" href="img/Utiles/newLogoRedLight.png">
+  <title>PIZZA PARTY / Lugar de las mejores pizza y empanadas</title>
+  <!-- metas seo -->
+  <meta name="description"
+    content="Pizzas y empanadas al horno de piedra. Con promociones imperdibles. Te llevamos la pizza hasta tu casa gratis.">
+  <meta name="author" content="Lucas Vasquez">
+  <meta name="keywords" content="Pizza , Empanadas, Delivery, Sucursales , Promociones , Black , Friday">
 </head>
 
 <body>
@@ -38,11 +46,11 @@
               <a class="nav-link active color_white" href="html/sucursal.html">Sucursales</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color_white" href="#"  role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle color_white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Menu
               </a>
-              <ul class="dropdown-menu" >
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="html/menu.html#pizza">Pizza</a></li>
                 <li><a class="dropdown-item" href="html/menu.html#empanada">Empanadas</a></li>
                 <li><a class="dropdown-item" href="html/menu.html#minuta">Minutas</a></li>
@@ -52,11 +60,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color_white" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle color_white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Delivery
               </a>
-              <ul class="dropdown-menu" >
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="html/delivery.html#promos">Promociones</a></li>
                 <li><a class="dropdown-item" href="html/delivery.html#pizza">Pizza</a></li>
                 <li><a class="dropdown-item" href="html/delivery.html#empanada">Empanadas</a></li>
@@ -74,7 +82,7 @@
   </nav>
   <!--End Nav-->
 
-  <header>
+  <header id="header">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -113,7 +121,7 @@
           <div class="card ">
             <img src="img/Promociones/promocion_menu.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Solo en nuestras Sucursales</p>
+              <p class="card-text">Solo en nuestras Sucursales 4 pizzas a 20 euros</p>
             </div>
           </div>
         </div>
@@ -123,8 +131,7 @@
           <div class="card ">
             <img src="img/Promociones/promocion_delivery.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Solo por el Black Friday 2x1 en pizzas</p>
             </div>
           </div>
         </div>
@@ -134,8 +141,7 @@
           <div class="card">
             <img src="img/Promociones/promo_2x1.png" class="card-img-top " alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">2x1 En nuestra sucursal de av.xxxxxxxx</p>
             </div>
           </div>
         </div>
@@ -145,8 +151,7 @@
           <div class="card ">
             <img src="img/Promociones/promo_jueves.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">Solo por la noche de pizza venite a probar la mejor pizza</p>
             </div>
           </div>
         </div>
@@ -182,16 +187,51 @@
   <!--End Main-->
 
   <footer class="footer container-fluid " id="redes">
-    <p class="footer_titulo fs-2 ">Redes Sociales</p>
-    <div class="redes fs-4 gap-3">
-      <a href="#" class="footer_redes" id="insta">Instagram <img class="footer_img" src="img/iconos/instagram.png"
-          alt="icono de instagram"></a>
-      <a href="#" class="footer_redes" id="face">Facebook <img class="footer_img" src="img/iconos/facebook.png"
-          alt="icono de facebook"></a>
-      <a href="#" class="footer_redes" id="whatsapp">Whatsapp <img src="img/iconos/whatsapp.png" alt="icono de whatsapp"
-          class="footer_img"></a>
+    <div class="footer_container ">
+      <div class="link_containers">
+        <div>
+          <p class="footer_titulo  ">Links</p>
+          <ul class="fs-5">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/html/sucursal.html">Sucursales</a></li>
+            <li><a href="/html/opinion.html">Opinion</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer_titulo ">Menu</p>
+          <ul class="fs-5">
+            <li><a href="/html/menu.html#pizza">Pizza</a></li>
+            <li><a href="/html/menu.html#empanada">Empanadas</a></li>
+            <li><a href="/html/menu.html#minuta">Minutas</a></li>
+            <li><a href="/html/menu.html#postre">Postres</a></li>
+            <li><a href="/html/menu.html#bebida">Bebidas</a></li>
+            <li><a href="/html/menu.html#descuento">Descuentos</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer_titulo ">
+            Delivery
+          </p>
+          <ul class="fs-5">
+            <li><a href="/html/delivery.html#promos">Promociones</a></li>
+            <li><a href="/html/delivery.html#pizza">Pizza</a></li>
+            <li><a href="/html/delivery.html#empanada">Empanadas</a></li>
+            <li><a href="/html/delivery.html#minuta">Minutas</a></li>
+            <li><a href="/html/delivery.html#bebida">Bebida</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="redes fs-3 gap-2 link_containers">
+        <p class="footer_titulo ">Redes Sociales</p>
+        <a href="#" class="footer_redes" id="insta">Instagram <img class="footer_img" src="/img/iconos/instagram.png"
+            alt="icono de instagram"></a>
+        <a href="#" class="footer_redes" id="face">Facebook <img class="footer_img" src="/img/iconos/facebook.png"
+            alt="icono de facebook"></a>
+        <a href="#" class="footer_redes" id="whatsapp">Whatsapp <img src="/img/iconos/whatsapp.png"
+            alt="icono de whatsapp" class="footer_img"></a>
+      </div>
     </div>
-    <p class="footer_text fs-5 my-2">© 2022 Vasquez — All rights reserved.</p>
+    <p class="footer_text fs-5">© 2022 Vasquez — All rights reserved.</p>
   </footer>
   <!--End Footer-->
 

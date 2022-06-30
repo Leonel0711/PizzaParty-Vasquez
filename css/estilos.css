@@ -1,19 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*Body*/
 * {
   font-family: 'Bebas Neue', cursive; }
 
 body {
   background: url("../img/fondo/fondo4.jpg"); }
 
-.color_white {
-  color: white; }
-
-.color_title {
-  color: #a50000;
-  text-decoration: underline; }
-
+/*Navbar*/
 nav div.offcanvas {
   width: 200px; }
 
@@ -64,6 +57,24 @@ nav div.offcanvas {
   background-color: #c5c5c5;
   color: black; }
 
+@media screen and (min-width: 576px) {
+  .logo {
+    width: 8rem;
+    height: auto;
+    justify-content: space-evenly; }
+  .nav_titleDesktop {
+    display: inline-block; }
+  .nav_title {
+    visibility: hidden; }
+  nav div.offcanvas {
+    width: 350px; }
+  .set_menu {
+    scroll-margin-top: 11rem; } }
+
+/*Index*/
+#header img {
+  height: 50vh; }
+
 .novedades {
   width: 90%; }
 
@@ -89,6 +100,7 @@ nav div.offcanvas {
   height: 400px;
   width: 100%; }
 
+/*Menu*/
 .row_gap {
   row-gap: 1rem; }
 
@@ -99,12 +111,10 @@ nav div.offcanvas {
   .cards_menu div div.card div {
     height: 30%; }
 
-.btn_menu:hover {
-  color: #292929; }
-
 .set_menu {
   scroll-margin-top: 8rem; }
 
+/*Delivery*/
 .cards_deli div div.card {
   height: 15rem; }
 
@@ -126,22 +136,49 @@ nav div.offcanvas {
   background-color: #a50000;
   border-radius: 5px; }
 
-.btn_opinion {
-  background-color: white; }
-
 .btn:focus {
   box-shadow: none; }
 
+/*Opinion*/
+.btn_opinion {
+  background-color: white; }
+
+/*footer*/
 .footer {
   padding: 1rem 0;
   background-color: #161616;
   height: auto; }
   .footer_titulo {
     text-align: center;
-    color: white; }
-  .footer_text {
-    text-align: center;
-    color: white; }
+    color: white;
+    font-size: 2rem; }
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .footer_container .link_containers:first-child {
+      display: flex;
+      justify-content: space-around; }
+      .footer_container .link_containers:first-child div {
+        width: auto;
+        display: none; }
+        @media screen and (min-width: 300px) {
+          .footer_container .link_containers:first-child div {
+            display: block; } }
+        .footer_container .link_containers:first-child div ul {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          .footer_container .link_containers:first-child div ul a {
+            text-decoration: none;
+            color: white; }
+            .footer_container .link_containers:first-child div ul a:hover {
+              color: #666666; }
+    @media screen and (min-width: 575px) {
+      .footer_container {
+        flex-direction: row; }
+        .footer_container .link_containers {
+          width: 50%; } }
   .footer_redes {
     text-decoration: none;
     display: flex;
@@ -152,17 +189,18 @@ nav div.offcanvas {
     border-radius: 1rem;
     transition: background-color 1s, color 1s, box-shadow 0.5s; }
   .footer_img {
-    width: 2rem;
+    width: 3vw;
     display: inline-block; }
+  .footer .redes {
+    display: flex;
+    flex-direction: column; }
+    .footer .redes a {
+      margin: auto; }
+  .footer_text {
+    text-align: center;
+    color: white; }
 
-.redes {
-  width: 60%;
-  max-width: 40rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
+/*mixin*/
 #insta:hover {
   background-color: #E1306C;
   color: white;
@@ -177,21 +215,3 @@ nav div.offcanvas {
   background-color: #049125;
   color: white;
   box-shadow: 0px 0px 20px #049125; }
-
-@media screen and (min-width: 576px) {
-  .logo {
-    width: 8rem;
-    height: auto;
-    justify-content: space-evenly; }
-  .nav_titleDesktop {
-    display: inline-block; }
-  .nav_title {
-    visibility: hidden; }
-  nav div.offcanvas {
-    width: 350px; }
-  .set_menu {
-    scroll-margin-top: 11rem; }
-  .redes {
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem; } }

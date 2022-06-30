@@ -1,0 +1,20 @@
+/*Menu*/
+.row_gap {
+    row-gap: 1rem;
+}
+
+.cards_menu div div.card {
+    height: 25rem;
+
+    img {
+        height: 70%;
+    }
+
+    div {
+        height: 30%;
+    }
+}
+
+.set_menu {
+    scroll-margin-top: 8rem;
+}

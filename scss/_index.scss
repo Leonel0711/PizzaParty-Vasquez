@@ -1,0 +1,32 @@
+/*Index*/
+#header {
+    & img {
+        height: 50vh;
+    }
+}
+
+.novedades {
+    width: 90%;
+}
+
+.container_deli {
+    background-color: rgb(224, 84, 42);
+    border-radius: 2rem;
+}
+
+.maxw_imgD {
+    max-width: 30rem;
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.border {
+    border: 2px solid $Blanco;
+
+    &:hover {
+        border: 2px solid red;
+    }
+}

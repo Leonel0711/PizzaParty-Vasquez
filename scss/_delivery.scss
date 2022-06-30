@@ -1,0 +1,31 @@
+/*Delivery*/
+.cards_deli div div.card {
+    height: 15rem;
+}
+
+.container_text {
+    height: 60%;
+}
+
+.btn_delivery {
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: $RojoPrincipal;
+
+    &:focus {
+        color: $Blanco;
+    }
+}
+
+.precio {
+    font-size: 2rem;
+}
+
+.bg_red {
+    background-color: $RojoPrincipal;
+    border-radius: 5px;
+}
+.btn:focus {
+    box-shadow: none;
+}

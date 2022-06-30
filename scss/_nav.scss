@@ -1,0 +1,95 @@
+/*Navbar*/
+
+nav div.offcanvas {
+    width: 200px;
+}
+
+.nav_shadow {
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.nav {
+    background: #292929;
+
+    &-link {
+        color: $Blanco;
+
+        &:focus {
+            color: $Blanco;
+        }
+
+        &:hover {
+            color: rgb(94, 94, 94);
+            border-left: 3px solid $Blanco;
+        }
+    }
+
+    &_titleDesktop {
+        display: none;
+        font-style: italic;
+        text-decoration: underline;
+        animation: color 2s infinite alternate linear;
+        font-size: 4rem;
+    }
+
+    &_title {
+        text-decoration: underline;
+        font-style: italic;
+        animation: color 2s infinite alternate linear;
+        font-size: 2.5rem;
+    }
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.center_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes color {
+    from {
+      color: rgb(92, 92, 92);
+    }
+  
+    to {
+      color: rgb(255, 0, 0);
+    }
+  }
+.offcanvas-body {
+    padding-left: 0;
+}
+
+.dropdown-item:focus {
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width:576px) {
+    .logo {
+        width: 8rem;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .nav_titleDesktop {
+        display: inline-block;
+    }
+
+    .nav_title {
+        visibility: hidden;
+    }
+
+    nav div.offcanvas {
+        width: 350px;
+    }
+
+    .set_menu {
+        scroll-margin-top: 11rem;
+    }
+}
