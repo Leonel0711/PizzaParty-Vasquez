@@ -9,14 +9,23 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Link css -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Home</title>
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="../img/Utiles/newLogoRedLight.png">
+    <!-- title of page -->
+    <title>PIZZA PARTY / Nos importa tu opinion</title>
+    <meta name="description"
+        content="Tu opinión nos importa para mejorar como negocio. No olvides dejar tu opinión llenando nuestro formulario.">
+    <meta name="author" content="Lucas Vasquez">
+    <meta name="keywords"
+        content="Pizza Party ,Opinión, Cliente , Limpieza , Calidad ,Atencion">
 </head>
 
 <body>
     <nav class="navbar bg-light sticky-top nav_shadow ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/Utiles/newLogoRed.png" class="logo" alt="logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../img/Utiles/newLogoRed.png" class="logo" alt="logo"></a>
             <h5 class="nav_titleDesktop ">Pizza Party</h5>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -40,7 +49,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle color_white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Menu
+                                Menú
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="menu.html#pizza">Pizza</a></li>
@@ -65,7 +74,7 @@
                             </ul>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active color_white" href="opinion.html">Opinion</a>
+                            <a class="nav-link active color_white" href="opinion.html">Opinión</a>
                         </li>
                     </ul>
                 </div>
@@ -74,8 +83,8 @@
     </nav>
     <!--End Nav-->
     <main>
-        <h1 class="text-center my-3 color_title">Opinion</h1>
-        <form class="container my-3 bg_red p-4 fs-3 color_white">
+        <h1 class="text-center my-3 color_title">Opinión</h1>
+        <form class="container my-3 p-4 fs-3 color_white form_opinion">
             <div>
                 <h2 class="text-center my-3">Datos del cliente</h2>
                 <div class="mb-3">
@@ -87,7 +96,7 @@
                     <input type="email" class="form-control" id="nombre" placeholder="name/nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Direccion de correo electronico</label>
+                    <label for="email" class="form-label">Dirección de correo electrónico</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
@@ -101,11 +110,11 @@
                 </div>
             </div>
             <div>
-                <h2 class="text-center my-4">Opinion del cliente</h2>
+                <h2 class="text-center my-4">Opinión del cliente</h2>
                 <div class="mb-3">
-                    <label for="servicio" class="form-label">Atencion de nuestro personal</label>
+                    <label for="servicio" class="form-label">Atención de nuestro personal</label>
                     <select id="servicio" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Calificacion</option>
+                        <option selected>Calificación</option>
                         <option value="excelent">Excelente</option>
                         <option value="nice">Muy Buena</option>
                         <option value="fire">Regular</option>
@@ -116,7 +125,7 @@
                 <div class="mb-3">
                     <label for="calidad" class="form-label">Calidad de Nuestro Producto</label>
                     <select id="calidad" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Calificacion</option>
+                        <option selected>Calificación</option>
                         <option value="excelent">Excelente</option>
                         <option value="nice">Muy Buena</option>
                         <option value="fire">Regular</option>
@@ -127,22 +136,23 @@
                 <div class="mb-3">
                     <label for="limpieza" class="form-label">Limpieza e higiene del local visitado</label>
                     <select id="limpieza" class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                        <option selected>Calificacion</option>
+                        <option selected>Calificación</option>
                         <option value="excelent">Excelente</option>
                         <option value="nice">Muy Buena</option>
                         <option value="fire">Regular</option>
                         <option value="bad">Mala</option>
                         <option value="horrible">Muy Mala</option>
                     </select>
+
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Opinion</label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Opinión</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
             <div class="col-12">
                 <button class="btn_opinion" type="submit">Enviar</button>
-                <button class="btn_opinion " type="reset">borrar</button>
+                <button class="btn_opinion " type="reset">Borrar</button>
             </div>
         </form>
 
@@ -150,16 +160,51 @@
     </main>
     <!--End Main-->
     <footer class="footer container-fluid " id="redes">
-        <p class="footer_titulo fs-2 ">Redes Sociales</p>
-        <div class="redes fs-4 gap-3">
-            <a href="#" class="footer_redes" id="insta">Instagram <img class="footer_img"
-                    src="../img/iconos/instagram.png" alt="icono de instagram"></a>
-            <a href="#" class="footer_redes" id="face">Facebook <img class="footer_img" src="../img/iconos/facebook.png"
-                    alt="icono de facebook"></a>
-            <a href="#" class="footer_redes" id="whatsapp">Whatsapp <img src="../img/iconos/whatsapp.png"
-                    alt="icono de whatsapp" class="footer_img"></a>
+        <div class="footer_container ">
+            <div class="link_containers">
+                <div>
+                    <p class="footer_titulo  ">Links</p>
+                    <ul class="fs-5">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="sucursal.html">Sucursales</a></li>
+                        <li><a href="opinion.html">Opinión</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer_titulo ">Menú</p>
+                    <ul class="fs-5">
+                        <li><a href="menu.html#pizza">Pizza</a></li>
+                        <li><a href="menu.html#empanada">Empanadas</a></li>
+                        <li><a href="menu.html#minuta">Minutas</a></li>
+                        <li><a href="menu.html#postre">Postres</a></li>
+                        <li><a href="menu.html#bebida">Bebidas</a></li>
+                        <li><a href="menu.html#descuento">Descuentos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer_titulo ">
+                        Delivery
+                    </p>
+                    <ul class="fs-5">
+                        <li><a href="delivery.html#promos">Promociones</a></li>
+                        <li><a href="delivery.html#pizza">Pizza</a></li>
+                        <li><a href="delivery.html#empanada">Empanadas</a></li>
+                        <li><a href="delivery.html#minuta">Minutas</a></li>
+                        <li><a href="delivery.html#bebida">Bebida</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="redes fs-3 gap-2 link_containers">
+                <p class="footer_titulo text-center">Redes Sociales</p>
+                <a href="#" class="footer_redes" id="insta">Instagram <img class="footer_img"
+                        src="../img/iconos/instagram.png" alt="icono de instagram"></a>
+                <a href="#" class="footer_redes" id="face">Facebook <img class="footer_img"
+                        src="../img/iconos/facebook.png" alt="icono de facebook"></a>
+                <a href="#" class="footer_redes" id="whatsapp">Whatsapp <img src="../img/iconos/whatsapp.png"
+                        alt="icono de whatsapp" class="footer_img"></a>
+            </div>
         </div>
-        <p class="footer_text fs-5 my-2">© 2022 Vasquez — All rights reserved.</p>
+        <p class="footer_text fs-5">© 2022 Vasquez — All rights reserved.</p>
     </footer>
     <!--End Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -1,8 +1,12 @@
-.bg-grey {
-    background-color: rgb(179, 179, 179);
+.sucursal {
+    background-color: rgb(141, 141, 141);
+    border-radius: 1rem;
+    
 }
 
 .maps {
-    height: 400px;
+    max-height: 400px;
+    min-height: 300px;
+    height: 100%;
     width: 100%;
 }

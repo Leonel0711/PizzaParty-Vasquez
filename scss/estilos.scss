@@ -1,5 +1,19 @@
 @import "_vars";
-@import "_body";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Body*/
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+body {
+    background: url("../img/fondo/fondo4.jpg");
+}
+.color_title{
+    color: $RojoPrincipal;
+}
+
+
+@import "_mixins";
 @import "_nav";
 @import "_index";
 @import "_sucursal";

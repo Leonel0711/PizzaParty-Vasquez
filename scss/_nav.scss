@@ -1,16 +1,36 @@
 /*Navbar*/
+/*Se uso un maps para modificar los colores del nav*/
+
+$navsColors:(
+    "sombra":rgb(0, 0, 0),
+    "bg":#292929,
+    "hover":rgb(94, 94, 94),
+    "1Title":rgb(92, 92, 92),
+    "2Title": rgb(255, 0, 0),
+    "dI_focus_bg":rgb(197, 197, 197),
+    "dI_focus_c":rgb(0, 0, 0),
+);
 
 nav div.offcanvas {
     width: 200px;
 }
 
 .nav_shadow {
-    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    
+    box-shadow: 1px 1px 5px map-get($map:$navsColors, $key:'sombra');
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    justify-content: space-evenly;
 }
 
 .nav {
-    background: #292929;
-
+    background: map-get($map:$navsColors, $key:'bg');
+    .navbar-nav{
+        padding: 1rem;
+    }
     &-link {
         color: $Blanco;
 
@@ -19,8 +39,8 @@ nav div.offcanvas {
         }
 
         &:hover {
-            color: rgb(94, 94, 94);
-            border-left: 3px solid $Blanco;
+            color: map-get($map:$navsColors, $key:'hover');
+            
         }
     }
 
@@ -40,11 +60,6 @@ nav div.offcanvas {
     }
 }
 
-.logo {
-    width: 5rem;
-    height: auto;
-    justify-content: space-evenly;
-}
 
 .center_icon {
     display: flex;
@@ -54,11 +69,11 @@ nav div.offcanvas {
 
 @keyframes color {
     from {
-      color: rgb(92, 92, 92);
+      color: map-get($map:$navsColors, $key:'1Title');
     }
   
     to {
-      color: rgb(255, 0, 0);
+      color: map-get($map:$navsColors, $key:'2Title');
     }
   }
 .offcanvas-body {
@@ -66,8 +81,8 @@ nav div.offcanvas {
 }
 
 .dropdown-item:focus {
-    background-color: rgb(197, 197, 197);
-    color: rgb(0, 0, 0);
+    background-color: map-get($map:$navsColors, $key:'dI_focus_bg');
+    color: map-get($map:$navsColors, $key:'dI_focus_c');
 }
 
 @media screen and (min-width:576px) {
@@ -89,7 +104,4 @@ nav div.offcanvas {
         width: 350px;
     }
 
-    .set_menu {
-        scroll-margin-top: 11rem;
-    }
 }
