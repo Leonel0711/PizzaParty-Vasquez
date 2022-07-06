@@ -19,14 +19,17 @@
   <meta name="description"
     content="Tenemos Sucursales en Av.Callao, Av.Corrientes y Av.Córdoba. Encontradnos en tu zona más cercana para probar la mejor pizza a la piedra.">
   <meta name="author" content="Lucas Vasquez">
-  <meta name="keywords" content="Pizza , Empanadas, Delivery, Sucursales , Av.Corrientes ,Almagro , Balvanera , Av.Callao , Av.Cordoba">
+  <meta name="keywords"
+    content="Pizza , Empanadas, Delivery, Sucursales , Av.Corrientes ,Almagro , Balvanera , Av.Callao , Av.Cordoba">
+
+  <Script src="../js/sucursal.js"></Script>
 </head>
 
 <body>
   <nav class="navbar bg-light sticky-top nav_shadow">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"><img src="../img/Utiles/newLogoRed.png" class="logo" alt="logo"></a>
-      <h5 class="nav_titleDesktop ">Pizza Party</h5>
+      <h2 class="nav_titleDesktop ">Pizza Party</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon fs-2 center_icon">☰</span>
@@ -34,7 +37,7 @@
       <div class="offcanvas offcanvas-end nav " tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title fs-1 nav_title" id="offcanvasNavbarLabel">Pizza Party</h5>
+          <h2 class="offcanvas-title fs-1 nav_title" id="offcanvasNavbarLabel">Pizza Party</h2>
           <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body fs-3 ">
@@ -84,57 +87,26 @@
 
   <main>
     <h1 class="text-center my-1 color_title">Sucursales</h1>
-    <section class="container p-4 my-3 sucursal" >
+    <div class="container botones fs-5">
+      <button onclick="cargarSucursal(0)" >Balvanera</button>
+      <button onclick="cargarSucursal(1)">Almagro</button>
+      <button onclick="cargarSucursal(2)">Monserrat</button>
+    </div>
+    <Section class="container p-4 my-3 sucursal" id="sucursalMaster">
       <h2 class="text-center">Av.Callao</h2>
       <div class="row ">
         <div class="col-md-6 fs-4 p-4">
+          <img src="../img/Sucursales/sucursal1.webp" alt="Sucursal de Av.Callao" class="w-100">
           <p class="main_textSucursal">Número de teléfono: xxxx-xxxx</p>
-          <p class="main_textSucursal">Mail: xxxxxx@gmail.com</p>
-          <p class="main_textSucursal">horarios:lunes a viernes 09:00 AM a 23:00 PM </p>
+          <p class="main_textSucursal">horarios: lunes a viernes 09:00 AM a 23:00 PM </p>
           <p class="main_textSucursal">Av.Callao 348 </p>
-          <p class="main_textSucursal">Balvanera</p>
         </div>
         <div class="col-md-6 "><iframe class="maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.2500884346355!2d-58.39575584813441!3d-34.60099940667171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac18525ea95%3A0x472ebe89b6f58a03!2sLa%20Continental!5e0!3m2!1ses!2sar!4v1655426535660!5m2!1ses!2sar"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </section>
-    
-    <!--End Section-->
-    <section class="container p-4 my-3 sucursal" >
-      <h2 class="text-center">Av.Corrientes</h2>
-      <div class="row ">
-        <div class="col-md-6 fs-4 p-4">
-          <p class="main_textSucursal">Número de teléfono: xxxx-xxxx</p>
-          <p class="main_textSucursal">Mail: xxxxxx@gmail.com</p>
-          <p class="main_textSucursal">horarios:lunes a viernes 09:00 AM a 23:00 PM </p>
-          <p class="main_textSucursal">Av.Corrientes 3701 </p>
-          <p class="main_textSucursal">Almagro</p>
-        </div>
-        <div class="col-md-6 "><iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.2500884346355!2d-58.39575584813441!3d-34.60099940667171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac18525ea95%3A0x472ebe89b6f58a03!2sLa%20Continental!5e0!3m2!1ses!2sar!4v1655426535660!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-    <!--End Section-->
-    <section class="container sucursal p-4 my-3 ">
-      <h2 class="text-center">Av.Córdoba</h2>
-      <div class="row ">
-        <div class="col-md-6 p-4 fs-4">
-          <p class="main_textSucursal">Número de teléfono: xxxx-xxxx</p>
-          <p class="main_textSucursal">Mail: xxxxxx@gmail.com</p>
-          <p class="main_textSucursal">horarios:lunes a viernes 09:00 AM a 23:00 PM </p>
-          <p class="main_textSucursal">Av.Córdoba 2501 </p>
-          <p class="main_textSucursal">Balvanera</p>
-        </div>
-        <div class="col-md-6 "><iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.2500884346355!2d-58.39575584813441!3d-34.60099940667171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac18525ea95%3A0x472ebe89b6f58a03!2sLa%20Continental!5e0!3m2!1ses!2sar!4v1655426535660!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
+    </Section>
     <!--End Section-->
   </main>
   <!--End Main-->

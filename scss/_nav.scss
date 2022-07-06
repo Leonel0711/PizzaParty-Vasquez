@@ -28,6 +28,9 @@ nav div.offcanvas {
 
 .nav {
     background: map-get($map:$navsColors, $key:'bg');
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     .navbar-nav{
         padding: 1rem;
     }
