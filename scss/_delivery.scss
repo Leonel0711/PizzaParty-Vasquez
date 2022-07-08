@@ -9,10 +9,12 @@
         padding: 10px;
         text-decoration: none;
         background-color: $RojoPrincipal;
-    
+        color: $Blanco;
         &:focus {
-            color: $Blanco;
+            background-color: rgb(161, 161, 161);
+            color: black;
             box-shadow: none;
+            transition: all 400ms ease;
         }
     }
 }

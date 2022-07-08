@@ -99,8 +99,8 @@ nav div.offcanvas {
     justify-content: center; }
 
 .botones {
-  background-color: white;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem; }
   .botones button {
@@ -110,7 +110,7 @@ nav div.offcanvas {
       border: 2px solid #c7c7c7; }
 
 .sucursal {
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 1rem; }
 
 .maps {
@@ -149,10 +149,13 @@ nav div.offcanvas {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    background-color: #a50000; }
+    background-color: #a50000;
+    color: white; }
     .cards_deli div div.card .btn_delivery:focus {
-      color: white;
-      box-shadow: none; }
+      background-color: #a1a1a1;
+      color: black;
+      box-shadow: none;
+      transition: all 400ms ease; }
 
 .card-img-top {
   max-height: 20rem; }
